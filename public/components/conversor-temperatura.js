@@ -37,10 +37,8 @@ class conversorTemperatura extends HTMLElement {
     const btn = this.shadow.getElementById("convertir");
     const resultado = this.shadow.getElementById("resultado");
 
-    // Establecer select según el atributo 'formato'
     select.value = formato;
 
-    // Evento convertir
     btn.addEventListener("click", () => {
       const raw = input.value;
       const num = parseFloat(raw);
